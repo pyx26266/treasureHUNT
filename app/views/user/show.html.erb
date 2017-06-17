@@ -1,0 +1,19 @@
+<% provide(:title, "GAME") %>
+We identified you as
+<h1> <%= @user.name %> </h1>
+
+
+<div class="row">
+  <div class="col-md-2">
+    <h1>Here #Score will be displyed!</h1>
+  </div>
+  <div class="col-md-6">
+    <h1>here Questiion will be present!</h1>
+    <p>You are at level: <%= @user.level %>
+      Your question is: <%= @level.question %>
+    </p>
+  </div>
+  <div class="col-md-2">
+    <h1>here rank will be shown!</h1>
+  </div>
+</div>

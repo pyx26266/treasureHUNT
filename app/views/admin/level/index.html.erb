@@ -1,0 +1,10 @@
+<% provide(:title, 'ADMIN') %>
+<h1>ADMIN PANNEL</h1>
+<div class="row">
+  <% @questions.each do |q| %>
+    <div class="col-md-12">
+      <%= q.num %>. <%= q.question %><br/>
+      Hint: <%= q.hint %>
+    </div>
+  <% end %>
+</div>
